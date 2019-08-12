@@ -1,0 +1,15 @@
+{
+  "name": "test",
+  "main": "fireflower.html"
+  ,
+  "window": {
+    "title": "",
+    "width": 1800,
+    "height": 1000,
+    "transparent": true,
+    "toolbar": false,
+    "frame": false,
+    "resizable": false,
+    "always-on-top": true
+  }
+}

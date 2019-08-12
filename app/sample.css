@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(images/64.png);
+}
+.box {
+  -webkit-app-region: drag;
+}
+.frame {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  cursor: pointer;
+  position: absolute;
+}
+.fire1 {
+  width: 100%;
+  height: 1800%;
+  background-image: url(images/64.png),url(images/65.png),url(images/66.png),url(images/67.png),url(images/68.png),url(images/69.png),url(images/70.png),url(images/71.png),url(images/72.png),url(images/73.png),url(images/74.png),url(images/75.png),url(images/76.png),url(images/77.png),url(images/78.png),url(images/79.png),url(images/80.png),url(images/81.png);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: 0 0, 0 400px, 0 800px, 0 1200px, 0 1600px, 0 2000px, 0 2400px, 0 2800px, 0 3200px, 0 3600px, 0 4000px, 0 4400px, 0 4800px, 0 5200px, 0 5600px, 0 6000px, 0 6400px, 0 6800px;
+  animation: parapara 1.5s steps(18) 1 normal none running;
+}
+.fire2 {
+  width: 100%;
+  height: 1700%;
+  background-image: url(images/64.png),url(images/82.png),url(images/83.png),url(images/84.png),url(images/85.png),url(images/86.png),url(images/87.png),url(images/89.png),url(images/90.png),url(images/91.png),url(images/92.png),url(images/93.png),url(images/94.png),url(images/95.png),url(images/96.png),url(images/97.png),url(images/98.png);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: 0 0, 0 400px, 0 800px, 0 1200px, 0 1600px, 0 2000px, 0 2400px, 0 2800px, 0 3200px, 0 3600px, 0 4000px, 0 4400px, 0 4800px, 0 5200px, 0 5600px, 0 6000px, 0 6400px;
+  animation: parapara 1.5s steps(17) 1 normal none running;
+}
+@keyframes parapara {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}

@@ -1,0 +1,36 @@
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="sample.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="box">
+      <div class="frame" id="framefire1">
+        <div id="divfire1"></div>
+      </div>
+      <div class="frame" id="framefire2">
+        <div id="divfire2"></div>
+      </div>
+    </div>
+  </body>
+  <script language="JavaScript"><!--
+    var framefire1 = document.getElementById('framefire1');
+    var divfire1 = document.getElementById('divfire1');
+    var framefire2 = document.getElementById('framefire2');
+    var divfire2 = document.getElementById('divfire2');
+    divfire1.classList.add("fire1");
+    function moveImg(){
+      var x1 = 200;
+      var x2 = 300;
+      var y1 = 400;
+      framefire1.style.left = event.x - x1;
+      framefire1.style.top  = event.y - y1;
+      divfire1.classList.toggle("fire1");
+      framefire2.style.left = event.x - x2;
+      framefire2.style.top  = event.y - y1;
+      divfire2.classList.toggle("fire2");
+    }
+    window.document.onclick = moveImg;
+  // --></script>
+</html>
